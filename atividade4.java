@@ -31,7 +31,7 @@ public class atividade4 {
             System.out.println("Menor numero foi:");         
             System.out.println(menor);
     
-            
+            entrada.close();
         }
 
     }
