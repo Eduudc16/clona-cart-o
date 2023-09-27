@@ -13,12 +13,14 @@ public class exerc8 {
         if (tamanholado < 1 || tamanholado > 20) {
             System.out.println("Tamanho fora do intervalo permitido.");
         } else {
-            // Loop para imprimir o quadrado
+           
             for (int i = 0; i < tamanholado; i++) {
                 for (int j = 0; j < tamanholado; j++) {
                     System.out.print("*");
                 }
                 System.out.println();
+
+                entrada.close();
 
 
     }

@@ -15,6 +15,8 @@ public class exerc9 {
                 System.out.print("* ");
             }
             System.out.println(); 
+
+            entrada.close();
         }
         
     }

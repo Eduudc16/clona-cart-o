@@ -23,7 +23,7 @@ public class exerc10{
         
         if (contadorIdades > 0) {
             double mediaIdades = (double) somaIdades / contadorIdades;
-            System.out.printf("A média das idades digitadas é: %.2f%n", mediaIdades);
+            System.out.printf("A média das idades digitadas é:" +  mediaIdades);
         } else {
             System.out.println("Nenhuma idade foi digitada.");
         }
