@@ -1,82 +1,77 @@
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class SA {
-
     public static void main(String[] args) {
+        JFrame janela = new JFrame("Exemplo com Campos de Texto");
+        janela.setSize(700, 500);
+        janela.setLayout(null);
+
+        JLabel nome = new JLabel("Nome:");
+        nome.setBounds(80, 30, 60, 30);
+
+        JTextField escrevenome = new JTextField();
+        escrevenome.setBounds(120, 30, 200, 30);
+
+        JLabel cpf = new JLabel("Cpf:");
+        cpf.setBounds(94, 60, 60, 30);
+
+        JTextField escrevecpf = new JTextField();
+        escrevecpf.setBounds(120, 60, 140, 30);        
+
+        JLabel telefone = new JLabel("telefone:");
+        telefone.setBounds(67, 90, 60, 30);
+
+        JTextField escrevetelefone = new JTextField();
+        escrevetelefone.setBounds(120, 90, 200, 30);        
+
+        JLabel email = new JLabel("email:");
+        email.setBounds(82, 120, 60, 30);
+
+        JTextField escreveemail = new JTextField();
+        escreveemail.setBounds(120, 120, 200, 30);
         
-        JFrame f = new JFrame();
+        JLabel endereco = new JLabel("endereço:");
+        endereco.setBounds(59, 150, 60, 30);
 
+        JTextField escreveendereco = new JTextField();
+        escreveendereco.setBounds(120, 150, 200, 30);
 
-        JLabel a = new JLabel("NOME:");
-
-        JLabel b = new JLabel("CPF:");
-
-        JLabel c = new JLabel("TELEFONE:");
-
-        JLabel d = new JLabel("EMAIL:");
-
-        JLabel e = new JLabel("ENDEREÇO:");
-         
-
-        JTextField g = new JTextField("");
-
-        JTextField h = new JTextField("");
-
-        JTextField i = new JTextField("");
-
-        JTextField j = new JTextField("");
-
-        JTextField k = new JTextField("");
-
+        JButton botao = new JButton("Salvar");
         
-        a.setBounds(5,200,200,40);
+        botao.setBounds(325, 250, 100, 40);
 
-        b.setBounds(5,100,200,40);
+        JButton botao1 = new JButton("fechar");
+        
+        botao1.setBounds(450, 250, 100, 40);
 
-        c.setBounds(5,300,200,40);
+        JLabel telefone2 = new JLabel("telefone:");
+        telefone2.setBounds(326, 90, 60, 30);
 
-        d.setBounds(5,400,200,40);
+        JTextField escrevetelefone2 = new JTextField();
+        escrevetelefone2.setBounds(380, 90, 200, 30);
 
-        e.setBounds(5,500,200,40);
+        janela.add(botao);
+        janela.add(botao1);
+        janela.add(nome);
+        janela.add(cpf);
+        janela.add(telefone);
+        janela.add(telefone2);
+        janela.add(email);
+        janela.add(endereco);        
+        janela.add(escrevenome);
+        janela.add(escrevecpf);
+        janela.add(escrevetelefone);
+        janela.add(escrevetelefone2);
+        janela.add(escreveemail);
+        janela.add(escreveendereco);
 
-        g.setBounds(80,210,200,30);
-
-        h.setBounds(80,110,200,30);
-
-        i.setBounds(80,310,200,30);
-
-        j.setBounds(80,410,200,30);
-
-        k.setBounds(80,510,200,30);
-
-        f.add(a);
-
-        f.add(b);
-
-        f.add(c);
-
-        f.add(d);
-
-        f.add(e);
-
-        f.add(g);
-
-        f.add(h);
-
-        f.add(i);
-
-        f.add(j);
-
-        f.add(k);
-
-        f.setLayout(null);
        
-        f.setVisible(true);
-         
-        f.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        f.setUndecorated(true);
-        
        
+        janela.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        janela.setVisible(true);
     }
-    
 }
+
